@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'raleaway' ;
+  src: url('assets/Raleway-VariableFont_wght.ttf');
+}
+body{
+    font-family: 'raleaway';
+}
+
+.container{
+  margin-left : 5%;
+  margin-right: 5%;
+}
+
+.common-form{
+    text-align: center;
+    display: flex;
+    margin:auto;
+    flex-direction: column;
+    width:300px;
+}
+
+.form-input{
+  height:35px;
+  margin:20px;
+  padding-left:10px;
+  border: 1px solid blueviolet;
+  color:blueviolet;
+  border-radius: 8px;
+}
+
+.form-button{
+  height : 35px;
+  width : 95px;
+  border: 1px solid blueviolet;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin : auto;
+}
+
+
