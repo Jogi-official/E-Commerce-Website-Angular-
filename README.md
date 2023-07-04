@@ -1,4 +1,9 @@
-# Ecommerce
+# Ecommerce Wesbite 
+
+## Json Server
+Please follow the guidelines mentioned in this github repo for setting up local db server
+https://github.com/typicode/json-server
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
