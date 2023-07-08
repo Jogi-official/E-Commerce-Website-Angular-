@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Login, Signup } from '../data-type';
 import { BehaviorSubject } from 'rxjs';
@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class SellerService {
   isSellerLoggedIn = new BehaviorSubject<boolean>(false);
+  isLoginError = new EventEmitter(false);
+
 
   constructor(private http: HttpClient , private router : Router) {}
 
@@ -24,14 +26,24 @@ export class SellerService {
   }
 
   userLogin(data : Login) {
-      console.warn(data);
-      //api call
-
+      this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,{observe:'response',}).
+      subscribe((result:any)=>{
+        if(result && result.body && result.body.length){
+          console.log("LOgged In");
+          localStorage.setItem('seller-home', JSON.stringify(result.body));
+          this.reloadSeller();
+        }
+        else{
+         this.isLoginError.emit(true);
+        }
+        (error: any) => {
+          console.error(error);
+        }
+      });
     }
 
   reloadSeller(){
     const localStorageValue = localStorage.getItem('seller-home')
-    console.log("dasdasdasd",localStorageValue);
     if(localStorageValue){
       this.isSellerLoggedIn.next(true);
       this.router.navigate(['seller-home']);

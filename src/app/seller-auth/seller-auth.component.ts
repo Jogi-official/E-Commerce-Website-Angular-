@@ -8,8 +8,11 @@ import { Login, Signup } from '../data-type';
   styleUrls: ['./seller-auth.component.css']
 })
 export class SellerAuthComponent implements OnInit {
-  constructor(private seller : SellerService, private router : Router ){}
   showLogin : boolean = false;
+  authError : string = '';
+
+  constructor(private seller : SellerService, private router : Router ){}
+
   ngOnInit() :void {
     this.seller.reloadSeller();
   }
@@ -19,7 +22,13 @@ export class SellerAuthComponent implements OnInit {
   }
 
   login(data : Login) :void {
-    this.seller.login(data);
+    this.authError = '';
+    this.seller.userLogin(data);
+    this.seller.isLoginError.subscribe((isError)=>{
+        if(isError) {
+          this.authError = "Email or password is incorrect!"
+        }
+    });
   }
 
   openLogin(){
