@@ -20,7 +20,7 @@ export class SellerService {
     }).
       subscribe((result) => {
         this.isSellerLoggedIn.next(true);
-        localStorage.setItem('seller-home', JSON.stringify(result.body));
+        localStorage.setItem('seller', JSON.stringify(result.body));
         this.router.navigate(['seller-home']);
       });
   }
@@ -30,7 +30,7 @@ export class SellerService {
       subscribe((result:any)=>{
         if(result && result.body && result.body.length){
           console.log("LOgged In");
-          localStorage.setItem('seller-home', JSON.stringify(result.body));
+          localStorage.setItem('seller', JSON.stringify(result.body));
           this.reloadSeller();
         }
         else{
@@ -43,7 +43,7 @@ export class SellerService {
     }
 
   reloadSeller(){
-    const localStorageValue = localStorage.getItem('seller-home')
+    const localStorageValue = localStorage.getItem('seller')
     if(localStorageValue){
       this.isSellerLoggedIn.next(true);
       this.router.navigate(['seller-home']);
