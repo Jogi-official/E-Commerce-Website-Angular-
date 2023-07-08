@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  menuType : String = 'default';
+  menuType : string = 'default';
+  sellerName : string = '';
 
   constructor(private route : Router){}
 
@@ -19,6 +20,13 @@ export class HeaderComponent {
         if(localStorage.getItem('seller') && val.url.includes('seller')){
           console.log("Andrr")
           this.menuType = 'seller';
+          if(localStorage.getItem('seller')){
+            let sellerStore = localStorage.getItem('seller');
+            let sellerData = sellerStore && JSON.parse(sellerStore)[0];
+            console.log(sellerData);
+            this.sellerName = sellerData.name;
+            console.log(this.sellerName);
+          }
         }
         else{
           console.error("Bahar");
@@ -27,4 +35,11 @@ export class HeaderComponent {
       }
     })
   };
+
+ logout(){
+  localStorage.removeItem('seller');
+  this.route.navigate(['/']);
+ }
+
+
 }
