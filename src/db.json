@@ -48,5 +48,52 @@
       "password": "abc@123",
       "id": 8
     }
+  ],
+  "products": [
+    {
+      "name": "MacBook Air Laptop",
+      "price": "810000",
+      "color": "White",
+      "category": "Laptop",
+      "description": "13.3-inch (diagonal) LED-backlit display with IPS technology; 2560-by-1600 native resolution at 227 pixels per inch with support for millions of colors",
+      "image": "https://education.uficon.com/wp-content/uploads/2021/12/MacBook_Pro_14-in_Space_Grey_PDP_Image_Position-1__TH-scaled.jpg",
+      "id": 4
+    },
+    {
+      "name": "Nothing Phone (1)",
+      "price": "32000",
+      "color": "White",
+      "category": "Mobile",
+      "description": "The Nothing smartphone is powered by Octa core (2.5 GHz, Single core, Kryo 670 + 2.4 GHz, Tri core, Kryo 670 + 1.8 GHz, Quad core, Kryo 670) Qualcomm Snapdragon 778G+ processor",
+      "image": "https://in.nothing.tech/cdn/shop/files/12Image_1280x1020_a11e1bb0-7ace-47b6-a8ad-ae34c33c5314_2160x.png?v=1658151576",
+      "id": 5
+    },
+    {
+      "name": "OnePlus 11R 5G",
+      "price": "39,999",
+      "color": "Grey",
+      "category": "Mobile",
+      "description": "Display: 6.7 Inches; 120 Hz Super Fluid AMOLED; Resolution: 2772 X 1240 pixels ,450 ppi, 20.1:9, 10-bit Color Depth, HDR10+\nOperating System: OxygenOS based on Android 13\nProcessor: Snapdragon 8+ Gen 1 Mobile Platform\n8GB LPDDR5X RAM, 128GB UFS3.1 STORAGE",
+      "image": "https://m.media-amazon.com/images/I/613SAOPmLeL._SL1500_.jpg",
+      "id": 6
+    },
+    {
+      "name": "OnePlus 11R 5G",
+      "price": "39,999",
+      "color": "Grey",
+      "category": "Mobile",
+      "description": "Display: 6.7 Inches; 120 Hz Super Fluid AMOLED; Resolution: 2772 X 1240 pixels ,450 ppi, 20.1:9, 10-bit Color Depth, HDR10+\nOperating System: OxygenOS based on Android 13\nProcessor: Snapdragon 8+ Gen 1 Mobile Platform\n8GB LPDDR5X RAM, 128GB UFS3.1 STORAGE",
+      "image": "https://m.media-amazon.com/images/I/613SAOPmLeL._SL1500_.jpg",
+      "id": 7
+    },
+    {
+      "name": "OnePlus 11R 5G",
+      "price": "39,999",
+      "color": "Grey",
+      "category": "Mobile",
+      "description": "Display: 6.7 Inches; 120 Hz Super Fluid AMOLED; Resolution: 2772 X 1240 pixels ,450 ppi, 20.1:9, 10-bit Color Depth, HDR10+\nOperating System: OxygenOS based on Android 13\nProcessor: Snapdragon 8+ Gen 1 Mobile Platform\n8GB LPDDR5X RAM, 128GB UFS3.1 STORAGE",
+      "image": "https://m.media-amazon.com/images/I/613SAOPmLeL._SL1500_.jpg",
+      "id": 8
+    }
   ]
 }

@@ -15,21 +15,16 @@ export class HeaderComponent {
 
   ngOnInit() {
     this.route.events.subscribe((val:any)=>{
-      console.warn(val.url);
       if(val.url){
         if(localStorage.getItem('seller') && val.url.includes('seller')){
-          console.log("Andrr")
           this.menuType = 'seller';
           if(localStorage.getItem('seller')){
             let sellerStore = localStorage.getItem('seller');
             let sellerData = sellerStore && JSON.parse(sellerStore)[0];
-            console.log(sellerData);
             this.sellerName = sellerData.name;
-            console.log(this.sellerName);
           }
         }
         else{
-          console.error("Bahar");
           this.menuType = 'default';
         }
       }
