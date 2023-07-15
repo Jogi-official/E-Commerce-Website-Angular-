@@ -51,15 +51,6 @@
   ],
   "products": [
     {
-      "name": "MacBook Air Laptop",
-      "price": "810000",
-      "color": "White",
-      "category": "Laptop",
-      "description": "13.3-inch (diagonal) LED-backlit display with IPS technology; 2560-by-1600 native resolution at 227 pixels per inch with support for millions of colors",
-      "image": "https://education.uficon.com/wp-content/uploads/2021/12/MacBook_Pro_14-in_Space_Grey_PDP_Image_Position-1__TH-scaled.jpg",
-      "id": 4
-    },
-    {
       "name": "Nothing Phone (1)",
       "price": "32000",
       "color": "White",
@@ -69,30 +60,30 @@
       "id": 5
     },
     {
-      "name": "OnePlus 11R 5G",
-      "price": "39,999",
-      "color": "Grey",
+      "name": "Redmi 11 Prime",
+      "price": "112115",
+      "color": "Black",
       "category": "Mobile",
-      "description": "Display: 6.7 Inches; 120 Hz Super Fluid AMOLED; Resolution: 2772 X 1240 pixels ,450 ppi, 20.1:9, 10-bit Color Depth, HDR10+\nOperating System: OxygenOS based on Android 13\nProcessor: Snapdragon 8+ Gen 1 Mobile Platform\n8GB LPDDR5X RAM, 128GB UFS3.1 STORAGE",
-      "image": "https://m.media-amazon.com/images/I/613SAOPmLeL._SL1500_.jpg",
+      "description": "Processor: MediaTek Helio G99 6nm Octa-core processor for high performance and efficiency; Up to 2.2GHz\nDisplay: 90Hz FHD+(1080x2400) AdaptiveSync Display; 16.71centimeters ; 20:9 aspect ratio\nCamera: 50MP AI Triple camera setup with 2MP Depth sensor and 2MP Macro camera| 8MP Front camera",
+      "image": "https://m.media-amazon.com/images/I/71BANx-zuWL._SL1500_.jpg",
       "id": 6
     },
     {
-      "name": "OnePlus 11R 5G",
-      "price": "39,999",
-      "color": "Grey",
+      "name": "Redmi 11 Prime",
+      "price": "10249",
+      "color": "Black",
       "category": "Mobile",
-      "description": "Display: 6.7 Inches; 120 Hz Super Fluid AMOLED; Resolution: 2772 X 1240 pixels ,450 ppi, 20.1:9, 10-bit Color Depth, HDR10+\nOperating System: OxygenOS based on Android 13\nProcessor: Snapdragon 8+ Gen 1 Mobile Platform\n8GB LPDDR5X RAM, 128GB UFS3.1 STORAGE",
-      "image": "https://m.media-amazon.com/images/I/613SAOPmLeL._SL1500_.jpg",
+      "description": "Processor: MediaTek Helio G99 6nm Octa-core processor for high performance and efficiency; Up to 2.2GHz\nDisplay: 90Hz FHD+(1080x2400) AdaptiveSync Display; 16.71centimeters ; 20:9 aspect ratio\nCamera: 50MP AI Triple camera setup with 2MP Depth sensor and 2MP Macro camera| 8MP Front camera",
+      "image": "https://m.media-amazon.com/images/I/71BANx-zuWL._SL1500_.jpg",
       "id": 7
     },
     {
-      "name": "OnePlus 11R 5G",
-      "price": "39,999",
-      "color": "Grey",
+      "name": "Redmi 11 Prime",
+      "price": "10249",
+      "color": "Black",
       "category": "Mobile",
-      "description": "Display: 6.7 Inches; 120 Hz Super Fluid AMOLED; Resolution: 2772 X 1240 pixels ,450 ppi, 20.1:9, 10-bit Color Depth, HDR10+\nOperating System: OxygenOS based on Android 13\nProcessor: Snapdragon 8+ Gen 1 Mobile Platform\n8GB LPDDR5X RAM, 128GB UFS3.1 STORAGE",
-      "image": "https://m.media-amazon.com/images/I/613SAOPmLeL._SL1500_.jpg",
+      "description": "Processor: MediaTek Helio G99 6nm Octa-core processor for high performance and efficiency; Up to 2.2GHz\nDisplay: 90Hz FHD+(1080x2400) AdaptiveSync Display; 16.71centimeters ; 20:9 aspect ratio\nCamera: 50MP AI Triple camera setup with 2MP Depth sensor and 2MP Macro camera| 8MP Front camera",
+      "image": "https://m.media-amazon.com/images/I/71BANx-zuWL._SL1500_.jpg",
       "id": 8
     }
   ]
